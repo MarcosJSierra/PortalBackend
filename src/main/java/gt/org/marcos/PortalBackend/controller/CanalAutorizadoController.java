@@ -44,7 +44,7 @@ public class CanalAutorizadoController {
         return canalAutService.createCanalAutorizado(canal);
     }
     
-    @PutMapping(value = "/{id}")
+    @PutMapping(value = "")
     CanalAutorizado updateCanalAutorizado(@RequestBody CanalAutorizado canal){
         return canalAutService.updateCanalAutorizado(canal);
     }
