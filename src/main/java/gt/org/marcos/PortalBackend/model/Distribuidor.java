@@ -22,7 +22,7 @@ public class Distribuidor implements Serializable{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="Distribuidor")
+    @Column(name="codigo")
     private Long codigo;
     
     @Column(name="nombre")
