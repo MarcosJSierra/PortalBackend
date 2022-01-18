@@ -15,7 +15,7 @@ import lombok.Data;
  */
 @Data
 @Entity
-@Table(name="Event")
+@Table(name="CanalAutorizado")
 public class CanalAutorizado implements Serializable{
     private static final long serialVersionUID = 1L;
     
