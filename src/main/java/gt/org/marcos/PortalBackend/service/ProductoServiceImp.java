@@ -22,7 +22,6 @@ public class ProductoServiceImp implements ProductoService{
     @Autowired
     public ProductoRepository productoRepo;
     
-    @Autowired
     
     @Override
     @Transactional(readOnly = true)
