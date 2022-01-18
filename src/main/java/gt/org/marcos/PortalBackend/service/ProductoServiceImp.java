@@ -61,7 +61,7 @@ public class ProductoServiceImp implements ProductoService{
     @Override
     @Transactional(readOnly = true)
     public ArrayList<Producto> getProductosByDistribuidor(Long distribuidorId) {
-        return null;
+        return productoRepo.queryByDistribuidorId(distribuidorId);
     }
     
 }

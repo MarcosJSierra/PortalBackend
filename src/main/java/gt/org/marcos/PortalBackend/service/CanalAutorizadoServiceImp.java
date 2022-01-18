@@ -35,7 +35,7 @@ public class CanalAutorizadoServiceImp implements CanalAutorizadoService{
     @Override
     @Transactional(readOnly = true)
     public ArrayList<CanalAutorizado> getCanalAutorizadoByDistribuidor(Long distribuidorId) {
-        return null;
+        return canalAutRepo.queryByDistribuidorId(distribuidorId);
     }
 
     @Override
