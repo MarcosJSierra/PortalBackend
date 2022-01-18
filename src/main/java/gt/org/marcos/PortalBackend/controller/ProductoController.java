@@ -39,13 +39,13 @@ public class ProductoController {
         return productoService.geteProductoById(id);
     }
     
-    @PostMapping(value = "", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    Producto createProducto(Producto producto){
+    @PostMapping(value = "")
+    Producto createProducto(@RequestBody Producto producto){
         return productoService.createProducto(producto);
     }
     
-    @PutMapping(value = "", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    Producto updateProducto(Producto producto){
+    @PutMapping(value = "")
+    Producto updateProducto(@RequestBody Producto producto){
         return productoService.updateProducto(producto);
     }
     

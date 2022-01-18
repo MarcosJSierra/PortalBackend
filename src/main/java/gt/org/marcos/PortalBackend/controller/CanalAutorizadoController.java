@@ -39,13 +39,13 @@ public class CanalAutorizadoController {
         return canalAutService.getCanalAutorizadoById(id);
     }
     
-    @PostMapping(value = "", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    CanalAutorizado createCanalAutorizado(CanalAutorizado canal){
+    @PostMapping(value = "")
+    CanalAutorizado createCanalAutorizado( @RequestBody CanalAutorizado canal){
         return canalAutService.createCanalAutorizado(canal);
     }
     
-    @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    CanalAutorizado updateCanalAutorizado(CanalAutorizado canal){
+    @PutMapping(value = "/{id}")
+    CanalAutorizado updateCanalAutorizado(@RequestBody CanalAutorizado canal){
         return canalAutService.updateCanalAutorizado(canal);
     }
     

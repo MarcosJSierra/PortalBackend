@@ -35,13 +35,13 @@ public class DistribuidorController {
         return distribuidorService.getDistribuidorById(id);
     }
     
-    @PostMapping(value = "", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    Distribuidor createDistribuidor(Distribuidor distribuidor){
+    @PostMapping(value = "")
+    Distribuidor createDistribuidor(@RequestBody Distribuidor distribuidor){
         return distribuidorService.createDistribuidor(distribuidor);
     }
     
-    @PutMapping(value = "", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    Distribuidor updateDistribuidor(Distribuidor distribuidor){
+    @PutMapping(value = "")
+    Distribuidor updateDistribuidor(@RequestBody Distribuidor distribuidor){
         return distribuidorService.updateDistribuidor(distribuidor);
     }
     
