@@ -21,5 +21,5 @@ public interface DistribuidorService {
     
     public Distribuidor updateDistribuidor(Distribuidor distribuidor);
     
-    public void deleteDistribuidor(Distribuidor distribuidor);
+    public void deleteDistribuidor(Long distribuidorId);
 }

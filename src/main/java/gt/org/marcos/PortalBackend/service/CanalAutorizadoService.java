@@ -23,5 +23,5 @@ public interface CanalAutorizadoService {
     
     public CanalAutorizado updateCanalAutorizado(CanalAutorizado canalAutorizado);
     
-    public void deleteCanalAutorizado(CanalAutorizado canalAutorizado);
+    public void deleteCanalAutorizado(Long id);
 }

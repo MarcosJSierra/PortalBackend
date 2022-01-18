@@ -23,7 +23,7 @@ public interface ProductoService {
     
     public Producto updateProducto(Producto producto);
     
-    public void deleteProducto(Producto producto);
+    public void deleteProducto(Long id);
     
     public ArrayList<Producto> getProductosByDistribuidor(Long distribuidorId);
    
