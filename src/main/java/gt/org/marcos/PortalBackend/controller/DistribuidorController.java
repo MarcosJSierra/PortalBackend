@@ -17,7 +17,7 @@ import org.springframework.http.MediaType;
  * @author marcos
  */
 @RestController
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin
 @RequestMapping(value = "api/portal/distribuidor")
 public class DistribuidorController {
     

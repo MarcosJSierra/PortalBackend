@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
  * @author marcos
  */
 @RestController
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin
 @RequestMapping(value = "api/portal/producto")
 public class ProductoController {
     
